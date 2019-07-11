@@ -14,7 +14,7 @@ RUN apt-get update \
     && npm i -g web-ext \
     && apt-get clean
 
-RUN groupadd -g 985 docker-host \
+RUN groupadd -g 113 docker-host \
     && usermod -a -G docker-host jenkins
 
 USER jenkins
