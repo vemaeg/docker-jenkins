@@ -17,5 +17,6 @@ RUN apt-get update \
 RUN groupadd -g 113 docker-host \
     && usermod -a -G docker-host jenkins
 
-USER jenkins
+#Keep running as user root.
+#USER jenkins
 
