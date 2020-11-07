@@ -8,8 +8,6 @@ RUN apt-get update \
     && curl -fsSL https://get.docker.com/ | sh \
     && apt-get install -y nodejs \
     && apt-get install -y build-essential \
-    && apt-get install -y python-pip \
-    && pip install docker-compose \
     && npm config set unsafe-perm=true \
     && npm i -g web-ext \
     && apt-get clean
