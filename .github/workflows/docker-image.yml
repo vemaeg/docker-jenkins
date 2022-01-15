@@ -1,6 +1,8 @@
 name: Publish docker images
 
 on:
+  #Allow manual trigger
+  workflow_dispatch: ~
   #daily at 3 UTC
   schedule:
     - cron: "0 3 * * *"
